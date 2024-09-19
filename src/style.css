@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.profile-pic {
+    width: 400px; 
+    height: 400px; 
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px; 
+    position: relative; 
+    z-index: 1; 
+}
+
+.border-ring {
+    width: 400px; /* Slightly larger than the profile picture */
+    height: 400px; /* Slightly larger than the profile picture */
+    border-radius: 50%;
+    border: 10px solid transparent; /* Border thickness */
+    position: absolute; /* Positioning to cover the profile picture */
+    top: 51%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
+    z-index: 1; /* Behind the profile picture */
+    animation: color-change 3s infinite; /* Animation for changing colors */
+}
+
+@keyframes color-change {
+    0% {
+        border-color: #ff6b6b;
+    }
+    25% {
+        border-color: #f7d94b;
+    }
+    50% {
+        border-color: #6bff6b;
+    }
+    75% {
+        border-color: #6bb3ff;
+    }
+    100% {
+        border-color: #ff6bb3;
+    }
+}
